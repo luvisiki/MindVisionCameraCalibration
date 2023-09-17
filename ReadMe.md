@@ -3,7 +3,11 @@
 ## The Whole Process of Stereo Camera Calibration 
 
 ### devices：
-mindvision工业黑白相机，型号为MV-MSU130GM2-T
+mindvision双目相机
+
+彩色双目相机，型号为MV-MSU134GC2-;镜头：莱纳 4.3mm 
+
+工业黑白相机，型号为MV-MSU134GM2-T;镜头：莱纳 4.3mm （附加：850nm滤片）
 
 ### why？
 `yaml`配置文件支持多种不同语言读取数据，为了利用其方便、易读、快速的性质，编写脚本存放在此仓库，对matlab下双目相机标定的保存数据（mat文件）进行脚本式转化。
