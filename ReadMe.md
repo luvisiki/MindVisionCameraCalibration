@@ -44,7 +44,16 @@ Ans: 在双目标定工具箱里输出的只有.mat文件，所以需要一个�
 │       ├── L                       # 默认分割后左相机的保存位置
 │       ├── R                       # 默认分割后右相机的保存位置
 │       └── setupParams.png
-└── ReadMe.md
+├── ReadMe.md
+└── Tools                           # 开发demo,手册等目录
+    ├── README.md
+    ├── 开发demo
+    │   ├── C++ builder
+    │   ├── Python
+    │   └── QT
+    └── 产品使用手册
+        ├── 彩色双目产品手册.pdf
+        └── 黑白双目产品手册.pdf
 ```
 
 ### 特别说明
