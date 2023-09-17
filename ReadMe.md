@@ -15,7 +15,8 @@ mindvision双目相机
 Ans: 在双目标定工具箱里输出的只有.mat文件，所以需要一个脚本读取其中数据，考虑到最后用的是.yaml文件读取相机参数，故完成此步骤的转换。
 
 ### 标定流程
-- step1: 使用mindvision演示程序采集标定图片，设置图片大小(建议为1280x2560），保存在Pictures文件夹；
+
+- step1: 使用mindvision演示程序采集标定图片(演示程序只能使用在windows和Linux(?)平台下,其他系统利用api接口根据所需语言自行编写采集程序)，设置图片大小(建议为1280x2560），保存在Pictures文件夹；
 - step2: 运行脚本`split_pictures.py`，完成图片切割；
 - step3: 使用MATLAB相机标定工具箱（Stereo Camera Calibrator，棋盘格大小为35mm）；如图设置：
 ![img.png](Calibration/Src/setupParams.png)
