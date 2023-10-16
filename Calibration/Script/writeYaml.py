@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 import sys
-
+import datetime
 import scipy.io as io
 import cv2
-
+des = datetime.date.today()
 
 data = io.loadmat('../Output/CameraParams.mat')  # 加载镜头数据
 fs = cv2.FileStorage('camera_paras.yaml', cv2.FileStorage_WRITE)
+fs.write('edit_Date', str(des))
 fs.write('_mLeftRotation', data['LeftRotation'].astype("float64"))
 fs.write('_mRightRotation', data['RightRotation'])
 fs.write('_mLeftTranslation', data['LeftTranslation'].astype("float64"))
