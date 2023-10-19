@@ -6,7 +6,7 @@
 ## The Whole Process of Stereo Camera Calibration 
 
 ### devices：
-mindvision双目相机
+mindvision(迈德威视)双目相机
 
 彩色双目相机，型号为MV-MSU134GC2-T; 镜头：莱纳 4.3mm 
 
